@@ -31,8 +31,6 @@ async function run() {
             const cursor = userCollection.find(query);
             const users = await cursor.toArray();
             res.send(users);
-
-
         });
 
         // POST User:add a new user
